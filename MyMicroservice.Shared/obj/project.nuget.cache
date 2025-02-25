@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "RPEB44DcEKwbU7QhUwl9SZHrV8dfnhaK+WD7PDcHyDuA/bIBGfzMncW1f843RpQY2B+Qb3Qep5IiJWxiwlteXw==",
+  "dgSpecHash": "SET32HEh6qE=",
   "success": true,
-  "projectFilePath": "C:\\Users\\rohit\\Desktop\\MS\\MyMicroservice.Shared\\MyMicroservice.Shared.csproj",
+  "projectFilePath": "C:\\Users\\rohit\\Desktop\\MS\\Microserviecs_DeltteNew3\\MyMicroservice.Shared\\MyMicroservice.Shared.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

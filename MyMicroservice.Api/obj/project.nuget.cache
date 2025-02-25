@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Grbbnqb4fEcVUbtARE7t/8FS2AxxpLdccCZSkoPEzgPNBLXY+0QXxAs8JmrJMU3VmXIPIhJPCAK3r+r3LbCBrg==",
+  "dgSpecHash": "DfDjch/+pQw=",
   "success": true,
-  "projectFilePath": "C:\\Users\\rohit\\Desktop\\MS\\MyMicroservice.Api\\MyMicroservice.Api.csproj",
+  "projectFilePath": "C:\\Users\\rohit\\Desktop\\MS\\Microserviecs_DeltteNew3\\MyMicroservice.Api\\MyMicroservice.Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\rohit\\.nuget\\packages\\mediatr\\11.0.0\\mediatr.11.0.0.nupkg.sha512",
     "C:\\Users\\rohit\\.nuget\\packages\\mediatr.contracts\\1.0.1\\mediatr.contracts.1.0.1.nupkg.sha512",

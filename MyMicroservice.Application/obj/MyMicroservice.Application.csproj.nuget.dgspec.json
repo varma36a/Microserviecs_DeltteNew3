@@ -1,24 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\rohit\\Desktop\\MS\\MyMicroservice.Application\\MyMicroservice.Application.csproj": {}
+    "C:\\Users\\rohit\\Desktop\\MS\\Microserviecs_DeltteNew3\\MyMicroservice.Application\\MyMicroservice.Application.csproj": {}
   },
   "projects": {
-    "C:\\Users\\rohit\\Desktop\\MS\\MyMicroservice.Application\\MyMicroservice.Application.csproj": {
+    "C:\\Users\\rohit\\Desktop\\MS\\Microserviecs_DeltteNew3\\MyMicroservice.Application\\MyMicroservice.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\rohit\\Desktop\\MS\\MyMicroservice.Application\\MyMicroservice.Application.csproj",
+        "projectUniqueName": "C:\\Users\\rohit\\Desktop\\MS\\Microserviecs_DeltteNew3\\MyMicroservice.Application\\MyMicroservice.Application.csproj",
         "projectName": "MyMicroservice.Application",
-        "projectPath": "C:\\Users\\rohit\\Desktop\\MS\\MyMicroservice.Application\\MyMicroservice.Application.csproj",
+        "projectPath": "C:\\Users\\rohit\\Desktop\\MS\\Microserviecs_DeltteNew3\\MyMicroservice.Application\\MyMicroservice.Application.csproj",
         "packagesPath": "C:\\Users\\rohit\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\rohit\\Desktop\\MS\\MyMicroservice.Application\\obj\\",
+        "outputPath": "C:\\Users\\rohit\\Desktop\\MS\\Microserviecs_DeltteNew3\\MyMicroservice.Application\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\rohit\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net5.0"
+          "net8.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
@@ -26,11 +26,11 @@
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net5.0": {
-            "targetAlias": "net5.0",
+          "net8.0": {
+            "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\rohit\\Desktop\\MS\\MyMicroservice.Domain\\MyMicroservice.Domain.csproj": {
-                "projectPath": "C:\\Users\\rohit\\Desktop\\MS\\MyMicroservice.Domain\\MyMicroservice.Domain.csproj"
+              "C:\\Users\\rohit\\Desktop\\MS\\Microserviecs_DeltteNew3\\MyMicroservice.Domain\\MyMicroservice.Domain.csproj": {
+                "projectPath": "C:\\Users\\rohit\\Desktop\\MS\\Microserviecs_DeltteNew3\\MyMicroservice.Domain\\MyMicroservice.Domain.csproj"
               }
             }
           }
@@ -39,11 +39,16 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
-        "net5.0": {
-          "targetAlias": "net5.0",
+        "net8.0": {
+          "targetAlias": "net8.0",
           "dependencies": {
             "MediatR": {
               "target": "Package",
@@ -56,7 +61,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -65,25 +71,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.408\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\rohit\\Desktop\\MS\\MyMicroservice.Domain\\MyMicroservice.Domain.csproj": {
+    "C:\\Users\\rohit\\Desktop\\MS\\Microserviecs_DeltteNew3\\MyMicroservice.Domain\\MyMicroservice.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\rohit\\Desktop\\MS\\MyMicroservice.Domain\\MyMicroservice.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\rohit\\Desktop\\MS\\Microserviecs_DeltteNew3\\MyMicroservice.Domain\\MyMicroservice.Domain.csproj",
         "projectName": "MyMicroservice.Domain",
-        "projectPath": "C:\\Users\\rohit\\Desktop\\MS\\MyMicroservice.Domain\\MyMicroservice.Domain.csproj",
+        "projectPath": "C:\\Users\\rohit\\Desktop\\MS\\Microserviecs_DeltteNew3\\MyMicroservice.Domain\\MyMicroservice.Domain.csproj",
         "packagesPath": "C:\\Users\\rohit\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\rohit\\Desktop\\MS\\MyMicroservice.Domain\\obj\\",
+        "outputPath": "C:\\Users\\rohit\\Desktop\\MS\\Microserviecs_DeltteNew3\\MyMicroservice.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\rohit\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net5.0"
+          "net8.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
@@ -91,8 +97,8 @@
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net5.0": {
-            "targetAlias": "net5.0",
+          "net8.0": {
+            "targetAlias": "net8.0",
             "projectReferences": {}
           }
         },
@@ -100,18 +106,24 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
-        "net5.0": {
-          "targetAlias": "net5.0",
+        "net8.0": {
+          "targetAlias": "net8.0",
           "imports": [
             "net461",
             "net462",
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -120,7 +132,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.408\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

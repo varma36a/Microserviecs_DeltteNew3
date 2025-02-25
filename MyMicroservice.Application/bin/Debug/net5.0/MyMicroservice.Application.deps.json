@@ -54,7 +54,10 @@
       },
       "MyMicroservice.Domain/1.0.0": {
         "runtime": {
-          "MyMicroservice.Domain.dll": {}
+          "MyMicroservice.Domain.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       }
     }
