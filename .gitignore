@@ -484,6 +484,7 @@ $RECYCLE.BIN/
 
 # Vim temporary swap files
 *.swp
-/MyMicroservice.*/obj/*
-/MyMicroservice.*/bin/*
+/MyMicroservice.*/obj
+/MyMicroservice.*/bin
+
 
