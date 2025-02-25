@@ -10,6 +10,10 @@ namespace MyMicroservice.Domain.Interfaces
 
     public interface IOrderRepository
     {
+        Task<IEnumerable<Order>> GetAllAsync();
+        Task<Order?> GetByIdAsync(string id);
         Task AddAsync(Order order);
+        Task<bool> UpdateAsync(Order order);
+        Task<bool> DeleteAsync(string id);
     }
 }

@@ -20,7 +20,16 @@ namespace MyMicroservice.Application.Features.Orders
         {
             var order = new Order(request.ProductId, request.Quantity);
             await _repository.AddAsync(order);
-            return order.Id;
+            //return order.Id;
+            return Guid.Empty;
         }
+
+
+        //public async Task<string> Handle(CreateOrderCommand request, CancellationToken cancellationToken)
+        //{
+        //    var order = new Order(request.ProductId, request.Quantity);
+        //    await _repository.AddAsync(order);
+        //    return order.Id;
+        //}
     }
 }

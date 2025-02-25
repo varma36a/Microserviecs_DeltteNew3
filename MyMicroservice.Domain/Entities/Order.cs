@@ -1,22 +1,22 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿
+using MongoDB.Bson;
+using MongoDB.Bson.Serialization.Attributes;
 
-namespace MyMicroservice.Domain.Entities
+namespace MyMicroservice.Domain.Entities;
+
+public class Order
 {
-    public class Order
-    {
-        public Guid Id { get; private set; }
-        public string ProductId { get; private set; }
-        public int Quantity { get; private set; }
+    [BsonId]
+    [BsonRepresentation(BsonType.ObjectId)]
+    public string Id { get; set; } = null!;
 
-        public Order(string productId, int quantity)
-        {
-            Id = Guid.NewGuid();
-            ProductId = productId;
-            Quantity = quantity;
-        }
+    public string ProductId { get; set; } = null!;
+    public int Quantity { get; set; }
+
+    public Order(string productId, int quantity)
+    {
+        Id = ObjectId.GenerateNewId().ToString();
+        ProductId = productId;
+        Quantity = quantity;
     }
 }

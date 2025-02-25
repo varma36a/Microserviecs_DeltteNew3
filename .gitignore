@@ -488,3 +488,18 @@ $RECYCLE.BIN/
 /MyMicroservice.*/bin
 
 
+/MyMicroservice.Application/obj/MyMicroservice.Application.csproj.nuget.dgspec.json
+/MyMicroservice.Application/obj/project.assets.json
+/MyMicroservice.Application/obj/project.nuget.cache
+/MyMicroservice.Api/obj/MyMicroservice.Api.csproj.nuget.dgspec.json
+/MyMicroservice.Api/obj/MyMicroservice.Api.csproj.nuget.g.targets
+/MyMicroservice.Api/obj/project.assets.json
+/MyMicroservice.Api/obj/project.nuget.cache
+/MyMicroservice.Infrastructure/obj/MyMicroservice.Infrastructure.csproj.nuget.dgspec.json
+/MyMicroservice.Infrastructure/obj/MyMicroservice.Infrastructure.csproj.nuget.g.targets
+/MyMicroservice.Infrastructure/obj/project.assets.json
+/MyMicroservice.Infrastructure/obj/project.nuget.cache
+/MyMicroservice.Domain/obj/MyMicroservice.Domain.csproj.nuget.dgspec.json
+/MyMicroservice.Domain/obj/project.assets.json
+/MyMicroservice.Domain/obj/project.nuget.cache
+/MyMicroservice.Api/.vs/MyMicroservice.Api/DesignTimeBuild/.dtbcache.v2
