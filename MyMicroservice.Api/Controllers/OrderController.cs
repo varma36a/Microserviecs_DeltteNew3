@@ -1,6 +1,8 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using MediatR;
+using Microsoft.AspNetCore.Mvc;
+using MyMicroservice.Application.Commands;
+using MyMicroservice.Application.Queries;
 using MyMicroservice.Domain.Entities;
-using MyMicroservice.Domain.Interfaces;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
@@ -10,43 +12,24 @@ namespace MyMicroservice.Api.Controllers;
 [Route("api/[controller]")]
 public class OrderController : ControllerBase
 {
-    private readonly IOrderRepository _repository;
+    private readonly IMediator _mediator;
 
-    public OrderController(IOrderRepository repository)
+    public OrderController(IMediator mediator)
     {
-        _repository = repository;
+        _mediator = mediator;
     }
 
     [HttpGet]
     public async Task<ActionResult<IEnumerable<Order>>> GetOrders()
     {
-        return Ok(await _repository.GetAllAsync());
-    }
-
-    [HttpGet("{id}")]
-    public async Task<ActionResult<Order>> GetOrder(string id)
-    {
-        var order = await _repository.GetByIdAsync(id);
-        return order is not null ? Ok(order) : NotFound();
+        var orders = await _mediator.Send(new GetOrdersQuery());
+        return Ok(orders);
     }
 
     [HttpPost]
-    public async Task<IActionResult> CreateOrder([FromBody] Order order)
+    public async Task<ActionResult<Order>> CreateOrder([FromBody] CreateOrderCommand command)
     {
-        await _repository.AddAsync(order);
-        return CreatedAtAction(nameof(GetOrder), new { id = order.Id }, order);
-    }
-
-    [HttpPut("{id}")]
-    public async Task<IActionResult> UpdateOrder(string id, [FromBody] Order order)
-    {
-        order.Id = id;
-        return await _repository.UpdateAsync(order) ? NoContent() : NotFound();
-    }
-
-    [HttpDelete("{id}")]
-    public async Task<IActionResult> DeleteOrder(string id)
-    {
-        return await _repository.DeleteAsync(id) ? NoContent() : NotFound();
+        var order = await _mediator.Send(command);
+        return CreatedAtAction(nameof(GetOrders), new { id = order.Id }, order);
     }
 }

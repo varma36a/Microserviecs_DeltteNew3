@@ -1,6 +1,8 @@
+using MediatR;
 using MyMicroservice.Infrastructure.Settings;
 using MyMicroservice.Infrastructure.Persistence;
-using MyMicroservice.Domain.Interfaces;
+using MyMicroservice.Application.Commands;
+using MyMicroservice.Application.Queries;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -10,9 +12,11 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.Configure<MongoDbSettings>(
     builder.Configuration.GetSection("MongoDbSettings"));
 
-// Register dependencies
+// Register MongoDB Context
 builder.Services.AddSingleton<MongoDbContext>();
-builder.Services.AddScoped<IOrderRepository, OrderRepository>();
+
+// Register MediatR for CQRS
+builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssemblyContaining<CreateOrderCommand>());
 
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();

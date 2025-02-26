@@ -503,3 +503,5 @@ $RECYCLE.BIN/
 /MyMicroservice.Domain/obj/project.assets.json
 /MyMicroservice.Domain/obj/project.nuget.cache
 /MyMicroservice.Api/.vs/MyMicroservice.Api/DesignTimeBuild/.dtbcache.v2
+/MyMicroservice.Application/obj/MyMicroservice.Application.csproj.nuget.g.props
+/MyMicroservice.Application/obj/MyMicroservice.Application.csproj.nuget.g.targets

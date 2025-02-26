@@ -10,6 +10,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\MyMicroservice.Domain\MyMicroservice.Domain.csproj" />
+    <ProjectReference Include="..\MyMicroservice.Infrastructure\MyMicroservice.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>
